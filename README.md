@@ -21,3 +21,18 @@ _example:_
 
 must remain as it is! except that the "100%" can be changed because it is after the colon.
 this is exactly the same for what is in the "options" section of the skript file !
+
+
+----
+To modify the item that will be dropped by the ore, you must write the name of the item or block in question in lowercase and without spelling mistakes!
+
+_example:_
+- "DropOfQuartzOre1: quartz"
+
+you can replace "quartz" by other item !
+
+- "DropOfQuartzOre1: stick"
+
+or
+
+- "DropOfQuartzOre1: diamond"
