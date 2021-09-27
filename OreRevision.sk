@@ -1,0 +1,221 @@
+#
+#                   NewMineral
+#
+#           Public Project
+#           
+#
+
+options:
+#                                                           |options of Quartz Ore|
+    ChanceQuartzOre1: 100%
+    ChanceQuartzOre2: 20%
+    ChanceQuartzOre3: 1%
+
+    NameQuartzOre1: &7Quartz &d- &fMediocre quality
+    NameQuartzOre2: &7Quartz &d- &aGood quality
+    NameQuartzOre3: &7Quartz &d- &eLegendary quality
+
+    MessageQuartzOre3: &b&loutch !! &3You mined a Legendary Quartz! Unbelievable !
+
+    DropOfQuartzOre1: quartz
+    DropOfQuartzOre2: quartz
+    DropOfQuartzOre3: quartz
+
+
+#                                                           |options of Iron Ore|
+    ChanceIronOre1: 100%
+    ChanceIronOre2: 20%
+    ChanceIronOre3: 1%
+
+    NameIronOre1: &7Iron ore &d- &fMediocre quality
+    NameIronOre2: &7Iron ore &d- &aGood quality
+    NameIronOre3: &7Iron ore &d- &eLegendary quality
+
+    MessageIronOre3: &b&loutch !! &3You mined a Legendary Iron Ore ! Unbelievable !
+
+    DropOfIronOre1: iron ore
+    DropOfIronOre2: iron ore
+    DropOfIronOre3: iron ore
+
+
+#                                                           |options of Diamond Ore|
+    ChanceDiamondOre1: 100%
+    ChanceDiamondOre2: 20%
+    ChanceDiamondOre3: 1%
+
+    NameDiamondOre1: &7Diamond &d- &fMediocre quality
+    NameDiamondOre2: &7Diamond &d- &aGood quality
+    NameDiamondOre3: &7Diamond &d- &eLegendary quality
+
+    MessageDiamondOre3: &b&loutch !! &3You mined a Legendary Diamond ! Unbelievable !
+
+    DropOfDiamondOre1: diamond
+    DropOfDiamondOre2: diamond
+    DropOfDiamondOre3: diamond
+
+
+#                                                           |options of Coal ore|
+    ChanceCoal1: 100%
+    ChanceCoal2: 20%
+    ChanceCoal3: 1%
+
+    NameCoal1: &7Coal &d- &fMediocre quality
+    NameCoal2: &7Coal &d- &aGood quality
+    NameCoal3: &7Coal &d- &eLegendary quality
+
+    MessageCoal3: &b&loutch !! &3You mined a Legendary Coal ! Unbelievable !
+
+    DropOfCoal1: coal
+    DropOfCoal2: coal
+    DropOfCoal3: coal
+
+
+#                                                           |options of Gold ore|
+    ChanceGoldOre1: 100%
+    ChanceGoldOre2: 20%
+    ChanceGoldOre3: 1%
+
+    NameGoldOre1: &7Gold Ore &d- &fMediocre quality
+    NameGoldOre2: &7Gold Ore &d- &aGood quality
+    NameGoldOre3: &7Gold Ore &d- &eLegendary quality
+
+    MessageGoldOre3: &b&loutch !! &3You mined a Legendary Gold Ore ! Unbelievable !
+
+    DropOfGoldOre1: coal
+    DropOfGoldOre2: coal
+    DropOfGoldOre3: coal
+
+
+#                                                           |options of Emerald ore|
+    ChanceEmeraldOre1: 100%
+    ChanceEmeraldOre2: 20%
+    ChanceEmeraldOre3: 1%
+
+    NameEmeraldOre1: &7Emerald &d- &fMediocre quality
+    NameEmeraldOre2: &7Emerald &d- &aGood quality
+    NameEmeraldOre3: &7Emerald &d- &eLegendary quality
+
+    MessageEmeraldOre3: &b&loutch !! &3You mined a Legendary Emerald ! Unbelievable !
+
+    DropOfEmeraldOre1: emerald
+    DropOfEmeraldOre2: emerald
+    DropOfEmeraldOre3: emerald
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#----------------------------------------------------------------------------------------------------------------------
+#-                                                     Code                                                           -
+#-                                                                                                                    -
+#----------------------------------------------------------------------------------------------------------------------
+
+#                                           --------Quartz Ore--------
+on break of nether quartz ore:
+    cancel event
+    set event-block to air
+    
+    chance of {@ChanceQuartzOre1}:
+        drop 1 of shiny {@DropOfQuartzOre1} named "{@NameQuartzOre1}"
+    
+    chance of {@ChanceQuartzOre2}:
+        drop 1 of shiny {@DropOfQuartzOre2} named "{@NameQuartzOre2}"
+
+    chance of {@ChanceQuartzOre3}:
+        drop 1 of shiny {@DropOfQuartzOre3} named "{@NameQuartzOre3}"
+        send "{@MessageQuartzOre3}" to event-player
+
+
+
+#                                           --------Iron Ore--------
+on break of iron ore:
+    cancel event
+    set event-block to air
+    
+    chance of {@ChanceIronOre1}:
+        drop 1 of shiny {@DropOfIronOre1} named "{@NameIronOre1}"
+    
+    chance of {@ChanceIronOre2}:
+        drop 1 of shiny {@DropOfIronOre2} named "{@NameIronOre2}"
+    
+    chance of {@ChanceIronOre3}:
+        drop 1 of shiny {@DropOfIronOre3} named "{@NameIronOre3}"
+        send "{@MessageIronOre3}" to event-player
+
+
+
+#                                           --------Diamond Ore--------
+on break of diamond ore:
+    cancel event
+    set event-block to air
+    chance of {@ChanceDiamondOre1}:
+        drop 1 of shiny {@DropOfDiamondOre1} named "{@NameDiamondOre1}"
+    
+    chance of {@ChanceDiamondOre2}:
+        drop 1 of shiny {@DropOfDiamondOre2} named "{@NameDiamondOre2}"
+    
+    chance of {@ChanceDiamondOre3}:
+        drop 1 of shiny {@DropOfDiamondOre3} named "{@NameDiamondOre3}"
+        send "{@MessageDiamondOre3}" to event-player
+
+
+
+#                                           --------Coal Ore--------
+on break of coal ore:
+    cancel event
+    set event-block to air
+    chance of {@ChanceCoal1}:
+        drop 1 of shiny {@DropOfCoal1} named "{@NameCoal1}"
+    
+    chance of {@ChanceCoal2}:
+        drop 1 of shiny {@DropOfCoal2} named "{@NameCoal2}"
+    
+    chance of {@ChanceCoal3}:
+        drop 1 of shiny {@DropOfCoal3} named "{@NameCoal3}"
+        send "{@MessageCoal3}" to event-player
+
+
+
+#                                           --------Gold Ore--------
+on break of gold ore:
+    cancel event
+    set event-block to air
+    chance of {@ChanceGoldOre1}:
+        drop 1 of shiny {@DropOfGoldOre1} named "{@NameGoldOre1}"
+    
+    chance of {@ChanceGoldOre2}:
+        drop 1 of shiny {@DropOfGoldOre2} named "{@NameGoldOre2}"
+    
+    chance of {@ChanceGoldOre3}:
+        drop 1 of shiny {@DropOfGoldOre3} named "{@NameGoldOre3}"
+        send "{@MessageGoldOre3}" to event-player
+
+
+
+#                                           --------Emerald Ore--------
+on break of emerald ore:
+    cancel event
+    set event-block to air
+    chance of {@ChanceEmeraldOre1}:
+        drop 1 of shiny {@DropOfEmeraldOre1} named "{@NameEmeraldOre1}"
+    
+    chance of {@ChanceEmeraldOre2}:
+        drop 1 of shiny {@DropOfEmeraldOre2} named "{@NameEmeraldOre2}"
+    
+    chance of {@ChanceEmeraldOre3}:
+        drop 1 of shiny {@DropOfEmeraldOre3} named "{@NameEmeraldOre3}"
+        send "{@MessageEmeraldOre3}" to event-player
