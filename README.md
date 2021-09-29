@@ -7,7 +7,7 @@
  - Sk-NbeeT
  - Skellett-Legacy
  - SkBee
-
+---------
 - There are three different percentages and qualities for each mineral! 
 - Everything is fully configurable!
 - No in-game commands are required!
