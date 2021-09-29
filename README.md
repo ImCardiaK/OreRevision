@@ -1,5 +1,12 @@
 # OreRevision
- Allows you to change the drop of minerals and add a "quality".
+ Allows you to change the drop of minerals and add a "quality". 1.16.5
+ Need of:
+ - TuSKe
+ - SkRayFall
+ - SkQuery
+ - Sk-NbeeT
+ - Skellett-Legacy
+ - SkBee
 
 - There are three different percentages and qualities for each mineral! 
 - Everything is fully configurable!
